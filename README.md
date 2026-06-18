@@ -94,7 +94,7 @@ These won't be accepted as issues:
 
 ## Security Issues
 
-**Do not open a public issue for security vulnerabilities.** Email directly: <Email currently not available>
+**Do not open a public issue for security vulnerabilities.** Email directly: *Email currently not available*
 
 ---
 
