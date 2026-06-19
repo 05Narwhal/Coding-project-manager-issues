@@ -1,7 +1,7 @@
 # Reporting Issues — Coding Project Manager
 
 > **Repo:** [05Narwhal/coding-project-manager](https://github.com/05Narwhal/coding-project-manager)  
-> **Current version:** 26.0.60-alpha  
+> **Current version:** 26.0.61-beta  
 > **Platform:** Windows (Tauri v2 desktop app)
 
 ---
@@ -94,7 +94,7 @@ These won't be accepted as issues:
 
 ## Security Issues
 
-**Do not open a public issue for security vulnerabilities.** Email directly: *Email currently not available*
+**Do not open a public issue for security vulnerabilities.** Email directly: [julianaljaz.loy@gmail.com](mailto:julianaljaz.loy@gmail.com)
 
 ---
 
