@@ -1,8 +1,19 @@
 # Reporting Issues — Coding Project Manager
 
 > **Repo:** [05Narwhal/coding-project-manager](https://github.com/05Narwhal/coding-project-manager)  
-> **Current version:** 26.1.1-stable
+> **Current version:** 26.1.20-beta
 > **Platform:** Windows (Tauri v2 desktop app)
+
+---
+
+## Known Limitations in 26.1.20-beta
+
+These are expected in this build — please don't open issues for them.
+
+- **Sync is one-way.** CPM pushes to the cloud and never reads back. Changes made in the app appear on the website; changes made on the website do not come back down, and two machines running CPM do not sync with each other yet.
+- **The website is read-only.** Web editing is a later project. Two-way sync lands first.
+- **Licensing is switched off.** No subscription is required, nothing locks and nothing expires in this build. A licence prompt appearing anywhere *is* worth reporting.
+- **Live collaboration is pre-release only.** It works in alpha and beta builds and is hidden in stable ones, pending more real-world network testing.
 
 ---
 
