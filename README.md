@@ -14,6 +14,8 @@ These are expected in this build — please don't open issues for them.
 - **The website is read-only.** Web editing is a later project. Two-way sync lands first.
 - **Licensing is switched off.** No subscription is required, nothing locks and nothing expires in this build. A licence prompt appearing anywhere *is* worth reporting.
 - **Live collaboration is pre-release only.** It works in alpha and beta builds and is hidden in stable ones, pending more real-world network testing.
+- **Everyone in a live session must be on the same CPM version.** An invite carries the host's version and a join from any other build is refused, with both version numbers in the message. Two different builds sharing one note corrupt it rather than failing cleanly, so this is deliberate — update both sides and re-share the link.
+- **Hosting needs a firewall rule, and Windows may never ask for one.** Its "allow access?" prompt appears at most once per program, needs an administrator to accept, and writes a *block* rule if it's dismissed. If nobody can reach your session, open the session panel: it says whether the port is blocked and has a button to allow it (Windows will ask for administrator permission).
 
 ---
 
