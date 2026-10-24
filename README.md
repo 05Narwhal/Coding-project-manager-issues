@@ -1,21 +1,24 @@
 # Reporting Issues — Coding Project Manager
 
 > **Repo:** [05Narwhal/coding-project-manager](https://github.com/05Narwhal/coding-project-manager)  
-> **Current version:** 26.1.23-stable
+> **Current version:** 26.1.30-beta (beta channel; last stable: 26.1.23-stable)
 > **Platform:** Windows (Tauri v2 desktop app)
 
 ---
 
-## Known Limitations in 26.1.20-beta
+## Known Limitations in 26.1.30-beta
 
 These are expected in this build — please don't open issues for them.
 
-- **Sync is one-way.** CPM pushes to the cloud and never reads back. Changes made in the app appear on the website; changes made on the website do not come back down, and two machines running CPM do not sync with each other yet.
-- **The website is read-only.** Web editing is a later project. Two-way sync lands first.
+- **Source control needs GitHub connected first.** Everything under Properties → Source control (Changes, diffs, History, Worktrees, branches, merges, pull requests, releases, session snapshots) is available in every build, but until you connect GitHub in Settings → GitHub (CPM shows a code you enter on github.com) the branch, pull-request and release features stay unavailable.
+- **Note attachments don't sync through the cloud yet.** Images and files in notes are stored on the PC that added them (25 MB per file). Syncing them needs Cloud Storage to be switched on for CPM's cloud project, which is done separately; until then a note opened on another device shows a "Not on this device" placeholder. Deleting a note does not delete its stored files.
+- **Discord status only exists in builds that carry a Discord application ID.** If Settings → Editor & Projects has no "Discord status" section, this build doesn't have one. When present it is off by default.
+- **Grammar suggestions are English-oriented and will sometimes flag correct text.** Use *Ignore once* / *Ignore rule*, or turn them off under Settings → Editor & Projects → Notes.
+- **Sync is two-way for notes and tasks only.** Notes and tasks you change on the website come back down to the app, and a note or task deleted on either side is deleted on the other. Project statistics and your Home layout only ever go up. Signing in on a new machine pulls your notes and tasks, but not your tracked time, scripts, settings or project links — the backup manager is the way to move those.
+- **The website edits notes and tasks; projects are read-only there.** Projects, time and statistics are shown but cannot be edited on the web.
 - **Licensing is switched off.** No subscription is required, nothing locks and nothing expires in this build. A licence prompt appearing anywhere *is* worth reporting.
-- **Live collaboration is pre-release only.** It works in alpha and beta builds and is hidden in stable ones, pending more real-world network testing.
-- **Everyone in a live session must be on the same CPM version.** An invite carries the host's version and a join from any other build is refused, with both version numbers in the message. Two different builds sharing one note corrupt it rather than failing cleanly, so this is deliberate — update both sides and re-share the link.
-- **Hosting needs a firewall rule, and Windows may never ask for one.** Its "allow access?" prompt appears at most once per program, needs an administrator to accept, and writes a *block* rule if it's dismissed. If nobody can reach your session, open the session panel: it says whether the port is blocked and has a button to allow it (Windows will ask for administrator permission).
+- **Live collaboration is in every build, but has had less real-world network testing than the rest of the app.** Everyone in a session must be on the same CPM version (a join from any other build is refused, with both version numbers in the message), and hosting may need a firewall rule — the session panel says whether the port is blocked and has a button to allow it (Windows will ask for administrator permission).
+- **Blank window when creating a Cargo project could not be reproduced** on a current build. If you still see it on 26.1.30-beta, please open an issue with the exact steps and the log from the app data folder's `logs/`.
 
 ---
 
@@ -35,7 +38,7 @@ Open a **Bug report** issue and include:
 
 | Field | What to provide |
 |---|---|
-| **App version** | Shown in Settings → About (e.g. `26.0.60-alpha`) |
+| **App version** | Shown in Settings → About (e.g. `26.1.30-beta`) |
 | **OS / Windows version** | e.g. Windows 11 Pro 23H2 |
 | **Steps to reproduce** | Numbered, minimal steps that trigger the bug |
 | **Expected behavior** | What you expected to happen |
@@ -51,7 +54,7 @@ Open a **Bug report** issue and include:
 ### Template
 
 ```
-**Version:** 26.0.60-alpha
+**Version:** 26.1.30-beta
 **OS:** Windows 11 Pro 23H2
 
 **Steps to reproduce:**
