@@ -1,7 +1,7 @@
 # Reporting Issues — Coding Project Manager
 
 > **Repo:** [05Narwhal/coding-project-manager](https://github.com/05Narwhal/coding-project-manager)  
-> **Current version:** 26.1.30-beta (beta channel; last stable: 26.1.23-stable)
+> **Current version:** 26.1.31-beta (beta channel; last stable: 26.1.23-stable)
 > **Platform:** Windows (Tauri v2 desktop app)
 
 ---
